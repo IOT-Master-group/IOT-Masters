@@ -1,6 +1,6 @@
-# Studio
+# IOT MASTERS
 
-Studio is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+IOT Masters is a company that deals with various high-tech problems and real-life problems
 
 ## Getting started
 
