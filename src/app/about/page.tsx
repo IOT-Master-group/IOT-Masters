@@ -61,7 +61,7 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
+        name: 'Pitsi Kagisho',
         role: 'Co-Founder / CEO',
         image: { src: imageLeslieAlexander },
       },
