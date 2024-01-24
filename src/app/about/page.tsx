@@ -71,7 +71,7 @@ const team = [
         image: { src: imageMichaelFoster },
       },
       {
-        name: 'Dries Vincent',
+        name: 'Pitsi Dimpho',
         role: 'Partner & Business Relations',
         image: { src: imageDriesVincent },
       },
