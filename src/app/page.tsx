@@ -188,14 +188,12 @@ export default async function Home() {
             <span className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">IOT Masters:</span> Hackathon champs excelling in data science, ML innovation.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            IOT Masters is a dynamic team of hackathon champions, trailblazing in data science and machine learning. With a distinctive touch of Tailwind CSS flair, we also excel in innovative web development solutions.
           </p>
         </FadeIn>
       </Container>
 
-      <Clients />
+      {/* <Clients /> */}
 
       <CaseStudies caseStudies={caseStudies} />
 
