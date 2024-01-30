@@ -19,7 +19,8 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import { type CaseStudy, type MDXEntry, loadCaseStudies, loadArticles } from '@/lib/mdx'
+import { PageLinks } from '@/components/PageLinks'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -47,10 +48,10 @@ function Clients() {
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
-            {clients.map(([client, logo]) => (
+            {clients.map(([client, nemisalogo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={nemisalogo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -74,8 +75,7 @@ function CaseStudies({
       >
         <p>
           We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          challenges. It’s also the cause, so we're part of harnessing and make your life easy through Tech.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -84,15 +84,15 @@ function CaseStudies({
             <FadeIn key={caseStudy.href} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                 <h3>
-                  <Link href={caseStudy.href}>
+                  <div >
                     <span className="absolute inset-0 rounded-3xl" />
-                    <Image
-                      src={caseStudy.logo}
+                    {/* <Image
+                      src={caseStudy.nemisalogo}
                       alt={caseStudy.client}
                       className="h-16 w-16"
                       unoptimized
-                    />
-                  </Link>
+                    /> */}
+                  </div>
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                   <time
@@ -104,7 +104,7 @@ function CaseStudies({
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>Case study</span>
+                  <span>Hackathon</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -179,6 +179,8 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  let blogArticles = (await loadArticles()).slice(0, 2)
+
 
   return (
     <>
@@ -207,6 +209,13 @@ export default async function Home() {
       </Testimonial>
 
       <Services />
+
+      <PageLinks
+        className="mt-24 sm:mt-32 lg:mt-40"
+        title="From the blog"
+        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        pages={blogArticles}
+      />
 
       <ContactSection />
     </>
