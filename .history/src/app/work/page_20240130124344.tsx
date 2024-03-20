@@ -1,24 +1,25 @@
-import Image from "next/image";
-import Link from "next/link";
-import logoBrightPath from "@/images/clients/bright-path/logo-dark.svg";
-import logoFamilyFund from "@/images/clients/family-fund/logo-dark.svg";
-import logoGreenLife from "@/images/clients/green-life/logo-dark.svg";
-import logoHomeWork from "@/images/clients/home-work/logo-dark.svg";
-import logoMailSmirk from "@/images/clients/mail-smirk/logo-dark.svg";
-import logoNorthAdventures from "@/images/clients/north-adventures/logo-dark.svg";
-import logoPhobia from "@/images/clients/phobia/logo-dark.svg";
-import logoUnseal from "@/images/clients/unseal/logo-dark.svg";
-import { type Metadata } from "next";
-import { Blockquote } from "@/components/Blockquote";
-import { Border } from "@/components/Border";
-import { Button } from "@/components/Button";
-import { ContactSection } from "@/components/ContactSection";
-import { Container } from "@/components/Container";
-import { FadeIn, FadeInStagger } from "@/components/FadeIn";
-import { PageIntro } from "@/components/PageIntro";
-import { Testimonial } from "@/components/Testimonial";
-import { formatDate } from "@/lib/formatDate";
-import { loadCaseStudies, type CaseStudy, type MDXEntry } from "@/lib/mdx";
+import { type Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import { Blockquote } from '@/components/Blockquote'
+import { Border } from '@/components/Border'
+import { Button } from '@/components/Button'
+import { ContactSection } from '@/components/ContactSection'
+import { Container } from '@/components/Container'
+import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { PageIntro } from '@/components/PageIntro'
+import { Testimonial } from '@/components/Testimonial'
+import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
+import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
+import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
+import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
+import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
+import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
+import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
+import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
+import { formatDate } from '@/lib/formatDate'
+import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 function CaseStudies({
   caseStudies,
@@ -146,7 +147,7 @@ export default async function Work() {
 
   return (
     <>
-      {/* <PageIntro
+      <PageIntro
         eyebrow="Our work"
         title="Proven solutions for real-world problems."
       >
@@ -169,25 +170,7 @@ export default async function Work() {
 
       <Clients />
 
-      <ContactSection /> */}
-
-<div
-  className="relative overflow-hidden w-60 h-80 rounded-3xl cursor-pointer text-2xl flex items-center justify-center font-bold bg-purple-400"
->
-  <div className="z-10 absolute w-full h-full peer"></div>
-  <div
-    className="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-purple-300 transition-all duration-500"
-  ></div>
-  <div
-    className="absolute flex text-xl text-center items-end justify-end peer-hover:right-0 peer-hover:rounded-b-none peer-hover:bottom-0 peer-hover:items-center peer-hover:justify-center peer-hover:w-full peer-hover:h-full -bottom-32 -right-16 w-36 h-44 rounded-full bg-purple-300 transition-all duration-500"
-  >
-    Nice to meet u,<br />Page still undevelopment 
-  </div>
-  <div className="w-full h-full items-center justify-center flex uppercase">
-    hover me
-  </div>
-</div>
-
+      <ContactSection />
     </>
   )
 }

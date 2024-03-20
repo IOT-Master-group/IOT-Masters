@@ -172,7 +172,7 @@ export default async function Work() {
       <ContactSection /> */}
 
 <div
-  className="relative overflow-hidden w-60 h-80 rounded-3xl cursor-pointer text-2xl flex items-center justify-center font-bold bg-purple-400"
+  className="relative overflow-hidden w-60 h-80 rounded-3xl cursor-pointer text-2xl flex items-center centerr font-bold bg-purple-400"
 >
   <div className="z-10 absolute w-full h-full peer"></div>
   <div

@@ -70,8 +70,8 @@ export function Logo({
     //   />
     // </svg>
 
-    <section className="flex items-center justify-center">
-      <button className="group flex justify-center rounded-md from-gray-800 p-1 font-semibold text-white drop-shadow-xl transition-all duration-500 hover:translate-y-3 hover:rounded-[50%] hover:from-[#331029] hover:to-[#310413]">
+    <section className="flex items-center justify-center pl-24">
+      <button className="group flex justify-center rounded-md border-2 border-gray-950 from-gray-800 p-1 font-semibold text-white drop-shadow-xl transition-all duration-500 hover:translate-y-3 hover:rounded-[50%] hover:from-[#331029] hover:to-[#310413]">
         <svg
           viewBox="0 0 130 32"
           aria-hidden="true"
@@ -90,7 +90,7 @@ export function Logo({
         </svg>
 
         <span 
-    className={`absolute font-extrabold opacity-0 duration-700 group-hover:-translate-y-10 group-hover:text-sm group-hover:opacity-100 ${invert ? 'text-white' : 'text-gray-900'}`}
+    className={`absolute opacity-0 duration-700 group-hover:-translate-y-10 group-hover:text-sm group-hover:opacity-100 ${invert ? 'text-white' : 'text-gray-900'}`}
 >
     IOT Masters
 </span>

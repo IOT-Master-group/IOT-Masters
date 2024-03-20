@@ -90,7 +90,7 @@ export function Logo({
         </svg>
 
         <span 
-    className={`absolute font-extrabold opacity-0 duration-700 group-hover:-translate-y-10 group-hover:text-sm group-hover:opacity-100 ${invert ? 'text-white' : 'text-gray-900'}`}
+    className={`absolute opacity-0 duration-700 group-hover:-translate-y-10 group-hover:text-sm group-hover:opacity-100 ${invert ? 'fill-white' : 'fill-neutral-950'}`}
 >
     IOT Masters
 </span>
