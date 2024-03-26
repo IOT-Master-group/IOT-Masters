@@ -146,7 +146,7 @@ export default async function Work() {
 
   return (
     <>
-      <PageIntro
+      {/* <PageIntro
         eyebrow="Our work"
         title="Proven solutions for real-world problems."
       >
@@ -169,7 +169,7 @@ export default async function Work() {
 
       <Clients />
 
-      <ContactSection />
+      <ContactSection /> */}
 
 {/* <div
   className="relative overflow-hidden w-60 h-80 rounded-3xl cursor-pointer text-2xl flex items-center justify-center font-bold bg-purple-400"
