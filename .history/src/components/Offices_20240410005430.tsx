@@ -32,17 +32,17 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Gauteng" invert={invert}>
+        <Office name="Copenhagen" invert={invert}>
           Station Place 
           <br />
-          190 Scheiding street, Pretoria Central
+          190 Scheiding street, Pretoria Cen, Denmark
         </Office>
       </li>
       <li>
-        <Office name="Limpopo" invert={invert}>
+        <Office name="Billund" invert={invert}>
           24 Lego Allé
           <br />
-          7190, Billun
+          7190, Billund, Denmark
         </Office>
       </li>
     </ul>

@@ -39,7 +39,7 @@ export function Offices({
         </Office>
       </li>
       <li>
-        <Office name="Limpopo" invert={invert}>
+        <Office name="Limpompo" invert={invert}>
           24 Lego Allé
           <br />
           7190, Billun
