@@ -42,7 +42,7 @@ export function Offices({
         <Office name="Limpopo" invert={invert}>
           Office
           <br />
-          7190, polokwane
+          7190, polokwa
         </Office>
       </li>
     </ul>
