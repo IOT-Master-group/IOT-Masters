@@ -1,5 +1,5 @@
-import glob from "fast-glob";
-import { type ImageProps } from "next/image";
+import { type ImageProps } from 'next/image'
+import glob from 'fast-glob'
 
 async function loadEntries<T extends { date: string }>(
   directory: string,
@@ -19,7 +19,7 @@ async function loadEntries<T extends { date: string }>(
           }
         },
       ),
-    )
+    
   ).sort((a, b) => b.date.localeCompare(a.date))
 }
 

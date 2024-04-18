@@ -8,6 +8,7 @@ import logoMailSmirk from "@/images/clients/mail-smirk/logo-dark.svg";
 import logoNorthAdventures from "@/images/clients/north-adventures/logo-dark.svg";
 import logoPhobia from "@/images/clients/phobia/logo-dark.svg";
 import logoUnseal from "@/images/clients/unseal/logo-dark.svg";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import { type Metadata } from "next";
 import { Blockquote } from "@/components/Blockquote";
 import { Border } from "@/components/Border";
@@ -72,9 +73,11 @@ function CaseStudies({
                   <div className="mt-8 flex">
                     <Button
                       href={caseStudy.href}
+                      className="inline-block"
                       aria-label={`Read case study: ${caseStudy.client}`}
                     >
-                      Read case study
+                      <span className="mr-2 inline-block">Read more</span>
+                      <ArrowRightIcon className="inline-block h-4 w-4" />
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
@@ -106,34 +109,34 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
-}
+// function Clients() {
+//   return (
+//     <Container className="mt-24 sm:mt-32 lg:mt-40">
+//       <FadeIn>
+//         <h2 className="font-display text-2xl font-semibold text-neutral-950">
+//           You’re in good company
+//         </h2>
+//       </FadeIn>
+//       <FadeInStagger className="mt-10" faster>
+//         <Border as={FadeIn} />
+//         <ul
+//           role="list"
+//           className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+//         >
+//           {clients.map(([client, logo]) => (
+//             <li key={client} className="group">
+//               <FadeIn className="overflow-hidden">
+//                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
+//                   <Image src={logo} alt={client} unoptimized />
+//                 </Border>
+//               </FadeIn>
+//             </li>
+//           ))}
+//         </ul>
+//       </FadeInStagger>
+//     </Container>
+//   )
+// }
 
 export const metadata: Metadata = {
   title: 'Our Work',
@@ -159,19 +162,19 @@ export default async function Work() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'SCN Tech (Pty) Ltd', logo: logoMailSmirk }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
+        We approached <em>IOT Masters</em> because we loved their past work. They
         delivered something remarkably similar in record time.
-      </Testimonial>
+      </Testimonial> */}
 
-      <Clients />
+      {/* <Clients /> */}
 
       <ContactSection />
 
-{/* <div
+      {/* <div
   className="relative overflow-hidden w-60 h-80 rounded-3xl cursor-pointer text-2xl flex items-center justify-center font-bold bg-purple-400"
 >
   <div className="z-10 absolute w-full h-full peer"></div>
@@ -187,7 +190,6 @@ export default async function Work() {
     hover me
   </div>
 </div> */}
-
     </>
   )
 }

@@ -19,7 +19,7 @@ async function loadEntries<T extends { date: string }>(
           }
         },
       ),
-    )
+    
   ).sort((a, b) => b.date.localeCompare(a.date))
 }
 

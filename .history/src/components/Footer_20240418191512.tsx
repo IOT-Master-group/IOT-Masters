@@ -10,7 +10,7 @@ const navigation = [
     links: [
       { title: 'FamilyFund', href: '/work/family-fund' },
       { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Nemisa', href: '/work/nemisa' },
+      { title: 'Phobia', href: '/work/phobia' },
       {
         title: (
           <>
@@ -124,7 +124,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © IOT Masters Agency Inc. {new Date().getFullYear()}
+            © IOT Ma Agency Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
