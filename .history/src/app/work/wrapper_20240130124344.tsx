@@ -1,11 +1,11 @@
-import { ContactSection } from "@/components/ContactSection";
-import { Container } from "@/components/Container";
-import { FadeIn } from "@/components/FadeIn";
-import { GrayscaleTransitionImage } from "@/components/GrayscaleTransitionImage";
-import { MDXComponents } from "@/components/MDXComponents";
-import { PageIntro } from "@/components/PageIntro";
-import { PageLinks } from "@/components/PageLinks";
-import { loadCaseStudies, type CaseStudy, type MDXEntry } from "@/lib/mdx";
+import { ContactSection } from '@/components/ContactSection'
+import { Container } from '@/components/Container'
+import { FadeIn } from '@/components/FadeIn'
+import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
+import { MDXComponents } from '@/components/MDXComponents'
+import { PageIntro } from '@/components/PageIntro'
+import { PageLinks } from '@/components/PageLinks'
+import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 export default async function CaseStudyLayout({
   caseStudy,
