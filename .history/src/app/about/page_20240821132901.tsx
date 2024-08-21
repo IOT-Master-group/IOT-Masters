@@ -1,6 +1,5 @@
-import Dimpho from "@/images/team/IOT-images/dimpho.png";
 import Image from "next/image";
-import Mphaka from "@/images/team/IOT-images/card.png";
+import Mphaka from "@/images/team/IOT-images/CEO1.jpeg";
 import Pitsi  from "@/images/team/IOT-images/CEO1.jpeg";
 import imageAngelaFisher from "@/images/team/angela-fisher.jpg";
 import imageBenjaminRussel from "@/images/team/benjamin-russel.jpg";
@@ -11,6 +10,7 @@ import imageEmmaDorsey from "@/images/team/emma-dorsey.jpg";
 import imageJeffreyWebb from "@/images/team/jeffrey-webb.jpg";
 import imageKathrynMurphy from "@/images/team/kathryn-murphy.jpg";
 import imageLeonardKrasner from "@/images/team/leonard-krasner.jpg";
+import imageMichaelFoster from "@/images/team/michael-foster.jpg";
 import imageWhitneyFrancis from "@/images/team/whitney-francis.jpg";
 import { type Metadata } from "next";
 import { Border } from "@/components/Border";
@@ -23,8 +23,6 @@ import { PageLinks } from "@/components/PageLinks";
 import { SectionIntro } from "@/components/SectionIntro";
 import { StatList, StatListItem } from "@/components/StatList";
 import { loadArticles } from "@/lib/mdx";
-
-// import imageMichaelFoster from "@/images/team/michael-foster.jpg";
 
 // import imageLeslieAlexander from "@/images/team/leslie-alexander.jpg";
 
@@ -67,70 +65,70 @@ const team = [
       {
         name: 'Pitsi Kagisho',
         role: 'Co-Founder / CEO',
-        image: { src: Pitsi },
+        image: { src: CEO },
       },
       {
         name: 'Michael Foster',
         role: 'Co-Founder / CTO',
-        image: { src: Mphaka },
+        image: { src: imageMichaelFoster },
       },
       {
         name: 'Pitsi Dimpho',
         role: 'Partner & Business Relations',
-        image: { src: Dimpho },
+        image: { src: imageDriesVincent },
       },
     ],
   },
-  // {
-  //   title: 'Team',
-  //   people: [
-  //     {
-  //       name: 'Chelsea Hagon',
-  //       role: 'Senior Developer',
-  //       image: { src: imageChelseaHagon },
-  //     },
-  //     {
-  //       name: 'Emma Dorsey',
-  //       role: 'Senior Designer',
-  //       image: { src: imageEmmaDorsey },
-  //     },
-  //     {
-  //       name: 'Leonard Krasner',
-  //       role: 'VP, User Experience',
-  //       image: { src: imageLeonardKrasner },
-  //     },
-  //     {
-  //       name: 'Blake Reid',
-  //       role: 'Junior Copywriter',
-  //       image: { src: imageBlakeReid },
-  //     },
-  //     {
-  //       name: 'Kathryn Murphy',
-  //       role: 'VP, Human Resources',
-  //       image: { src: imageKathrynMurphy },
-  //     },
-  //     {
-  //       name: 'Whitney Francis',
-  //       role: 'Content Specialist',
-  //       image: { src: imageWhitneyFrancis },
-  //     },
-  //     {
-  //       name: 'Jeffrey Webb',
-  //       role: 'Account Coordinator',
-  //       image: { src: imageJeffreyWebb },
-  //     },
-  //     {
-  //       name: 'Benjamin Russel',
-  //       role: 'Senior Developer',
-  //       image: { src: imageBenjaminRussel },
-  //     },
-  //     {
-  //       name: 'Angela Fisher',
-  //       role: 'Front-end Developer',
-  //       image: { src: imageAngelaFisher },
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Team',
+    people: [
+      {
+        name: 'Chelsea Hagon',
+        role: 'Senior Developer',
+        image: { src: imageChelseaHagon },
+      },
+      {
+        name: 'Emma Dorsey',
+        role: 'Senior Designer',
+        image: { src: imageEmmaDorsey },
+      },
+      {
+        name: 'Leonard Krasner',
+        role: 'VP, User Experience',
+        image: { src: imageLeonardKrasner },
+      },
+      {
+        name: 'Blake Reid',
+        role: 'Junior Copywriter',
+        image: { src: imageBlakeReid },
+      },
+      {
+        name: 'Kathryn Murphy',
+        role: 'VP, Human Resources',
+        image: { src: imageKathrynMurphy },
+      },
+      {
+        name: 'Whitney Francis',
+        role: 'Content Specialist',
+        image: { src: imageWhitneyFrancis },
+      },
+      {
+        name: 'Jeffrey Webb',
+        role: 'Account Coordinator',
+        image: { src: imageJeffreyWebb },
+      },
+      {
+        name: 'Benjamin Russel',
+        role: 'Senior Developer',
+        image: { src: imageBenjaminRussel },
+      },
+      {
+        name: 'Angela Fisher',
+        role: 'Front-end Developer',
+        image: { src: imageAngelaFisher },
+      },
+    ],
+  },
 ]
 
 function Team() {
