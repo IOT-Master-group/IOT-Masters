@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { Container } from "@/components/Container";
-import { FadeIn } from "@/components/FadeIn";
+import Link from 'next/link'
 
-  
+import { Container } from '@/components/Container'
+import { FadeIn } from '@/components/FadeIn'
+
 export default function NotFound() {
   return (
     <Container className="flex h-full items-center pt-24 sm:pt-32 lg:pt-40">
