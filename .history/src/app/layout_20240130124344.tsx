@@ -1,11 +1,13 @@
-import "@/styles/tailwind.css";
-import { type Metadata } from "next";
-import { RootLayout } from "@/components/RootLayout";
+import { type Metadata } from 'next'
+
+import { RootLayout } from '@/components/RootLayout'
+
+import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - IOT Masters',
-    default: 'IOT Masters - Award winning group based in SA',
+    template: '%s - Studio',
+    default: 'Studio - Award winning developer studio based in Denmark',
   },
 }
 

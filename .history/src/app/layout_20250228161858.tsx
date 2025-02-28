@@ -5,7 +5,7 @@ import { RootLayout } from "@/components/RootLayout";
 export const metadata: Metadata = {
   title: {
     template: '%s - IOT Masters',
-    default: 'IOT Masters - Award winning group based in SA',
+    default: 'IOT Masters - Award winning group studio based in Denmark',
   },
 }
 

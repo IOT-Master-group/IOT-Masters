@@ -1,4 +1,4 @@
-import Dimpho from "@/images/team/IOT-images/card.png";
+import Dimpho from "@/images/team/IOT-images/CEOjjEe
 import Image from "next/image";
 import Mphaka from "@/images/team/IOT-images/card.png";
 import Pitsi from "@/images/team/IOT-images/CEO1.jpeg";

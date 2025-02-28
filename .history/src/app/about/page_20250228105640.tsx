@@ -1,4 +1,4 @@
-import Dimpho from "@/images/team/IOT-images/card.png";
+import Dimpho from "@/images/team/IOT-images/dimpho.png";
 import Image from "next/image";
 import Mphaka from "@/images/team/IOT-images/card.png";
 import Pitsi from "@/images/team/IOT-images/CEO1.jpeg";
@@ -24,7 +24,7 @@ import { SectionIntro } from "@/components/SectionIntro";
 import { StatList, StatListItem } from "@/components/StatList";
 import { loadArticles } from "@/lib/mdx";
 
-// import Dimpho from "@/images/team/IOT-images/dimpho.png";
+// import Dimpho from "/Users/pitsi/Desktop/IOT Masters website/IOT-Masters/src/images/team/IOT-images/CEO1.jpeg";
 
 // import Mphaka from "@/images/team/IOT-images/card.png";
 // import Pitsi  from "@/images/team/IOT-images/CEO1.jpeg";

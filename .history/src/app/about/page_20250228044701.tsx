@@ -1,7 +1,4 @@
-import Dimpho from "@/images/team/IOT-images/card.png";
 import Image from "next/image";
-import Mphaka from "@/images/team/IOT-images/card.png";
-import Pitsi from "@/images/team/IOT-images/CEO1.jpeg";
 import imageAngelaFisher from "@/images/team/angela-fisher.jpg";
 import imageBenjaminRussel from "@/images/team/benjamin-russel.jpg";
 import imageBlakeReid from "@/images/team/blake-reid.jpg";
@@ -53,7 +50,7 @@ function Culture() {
             are allowed to have LinkedIn profiles.
           </GridListItem>
           <GridListItem title="Trust" invert>
-            We don't care when our team works just as long as they are working
+            We don’t care when our team works just as long as they are working
             every waking second.
           </GridListItem>
           <GridListItem title="Compassion" invert>
@@ -73,17 +70,23 @@ const team = [
       {
         name: 'Pitsi Kagisho',
         role: 'Co-Founder / CEO',
-        image: { src: Pitsi },
+        image: { src: 
+        // Pitsi 
+      },
       },
       {
         name: 'Michael Foster',
         role: 'Co-Founder / CTO',
-        image: { src: Mphaka },
+        image: { src: 
+          // Mphaka 
+        },
       },
       {
         name: 'Pitsi Dimpho',
         role: 'Partner & Business Relations',
-        image: { src: Dimpho },
+        image: { src: 
+          Dimpho 
+        },
       },
     ],
   },
@@ -212,7 +215,7 @@ export default async function About() {
             differently by charging triple instead.
           </p>
           <p>
-            At Studio, we're more than just colleagues — we're a family. This
+            At Studio, we’re more than just colleagues — we’re a family. This
             means we pay very little and expect people to work late. We want our
             employees to bring their whole selves to work. In return, we just
             ask that they keep themselves there until at least 6:30pm.
