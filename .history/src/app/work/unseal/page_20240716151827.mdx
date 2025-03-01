@@ -1,0 +1,71 @@
+import imageEmilySelman from "./emily-selman.jpg";
+import imageHero from "./hero.jpg";
+import logo from "@/images/clients/unseal/logomark-dark.svg";
+
+// Importing the logo for the Unseal client
+// Importing the hero image for the case study
+// Importing the image of Emily Selman
+
+// Defining the case study details
+export const caseStudy = {
+  client: 'Unseal', // Client name
+  title: 'Get a hodl of your health', // Case study title
+  description:
+    'Unseal is the first NFT platform where users can mint and trade NFTs of their own personal health records, allowing them to take control of their data.', // Brief description of the project
+  summary: [
+    'Unseal is the first NFT platform where users can mint and trade NFTs of their own personal health records, allowing them to take control of their data.', // Repeated brief description
+    'We built out the blockchain infrastructure that supports Unseal. Unfortunately, we took a massive loss on this project when Unseal’s cryptocurrency, PlaceboCoin, went to zero.', // Summary of the project's outcome
+  ],
+  logo, // Logo of the client
+  image: { src: imageHero }, // Hero image for the case study
+  date: '2022-10', // Date of the case study
+  service: 'Blockchain development', // Service provided
+  testimonial: {
+    author: { name: 'Emily Selman', role: 'Head of Engineering at Unseal' }, // Testimonial author details
+    content:
+      'Studio did an amazing job building out our core blockchain infrastructure and I’m sure once PlaceboCoin rallies they’ll be able to finish the project.', // Testimonial content
+  },
+}
+
+// Metadata for the case study page
+export const metadata = {
+  title: `${caseStudy.client} Case Study`, // Page title
+  description: caseStudy.description, // Page description
+}
+
+## Overview
+
+// Overview of the project background
+Annoyed that his wife’s gynaecologist would not disclose the results of her pap smear, Unseal’s founder Kevin came up with the idea of using the block chain to store individual health records.
+
+// Early development and collaboration details
+Unseal approached us early in their development, having just raised funds through an ICO of their cryptocurrency PlaceboCoin. Having never worked on a web3 product we decided to farm the project out to an agency in Kyiv and skim profits off the top. Despite frequent complaints about missile strikes and power outages, the Ukrainians delivered the brief ahead of schedule.
+
+// Financial loss explanation
+After reaching a high of $12k, PlaceboCoin went to zero in a matter of hours. Because we took payment in PlaceboCoin but our subcontractors insisted on being paid in USD we have taken a huge financial loss on this project.
+
+## What we did
+
+// List of services provided
+<TagList>
+  <TagListItem>Blockchain development</TagListItem>
+  <TagListItem>Backend (Solidity)</TagListItem>
+  <TagListItem>Smart contracts</TagListItem>
+</TagList>
+
+// Blockquote with testimonial
+<Blockquote
+  author={{ name: 'Emily Selman', role: 'Head of Engineering at Unseal' }}
+  image={{ src: imageEmilySelman }}
+>
+  Studio did an amazing job building out our core blockchain infrastructure and
+  I’m sure once PlaceboCoin rallies they’ll be able to finish the project.
+</Blockquote>
+
+// Statistics related to the project
+<StatList>
+  <StatListItem value="34%" label="Fewer transactions" />
+  <StatListItem value="10%" label="Slower transactions" />
+  <StatListItem value="1000ms" label="Transaction latency" />
+  <StatListItem value="3" label="Active nodes" />
+</StatList>

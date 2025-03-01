@@ -1,9 +1,8 @@
-import Link from 'next/link'
-
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
-import { socialMediaProfiles } from '@/components/SocialMedia'
+import Link from "next/link";
+import { Container } from "@/components/Container";
+import { FadeIn } from "@/components/FadeIn";
+import { Logo } from "@/components/Logo";
+import { socialMediaProfiles } from "@/components/SocialMedia";
 
 const navigation = [
   {
@@ -11,7 +10,7 @@ const navigation = [
     links: [
       { title: 'FamilyFund', href: '/work/family-fund' },
       { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Nemisa', href: '/work/nemisa' },
       {
         title: (
           <>
@@ -125,7 +124,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © IOT Masters Agency Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
