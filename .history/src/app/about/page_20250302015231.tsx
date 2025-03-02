@@ -212,7 +212,7 @@ export default async function About() {
             differently by charging triple instead.
           </p>
           <p>
-            At Studio, we&apos;re more than just colleagues — we&apos;re a family. This
+            At Studio, we're more than just colleagues — we're a family. This
             means we pay very little and expect people to work late. We want our
             employees to bring their whole selves to work. In return, we just
             ask that they keep themselves there until at least 6:30pm.

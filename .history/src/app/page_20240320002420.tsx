@@ -1,25 +1,26 @@
-import Image from "next/image";
-import Link from "next/link";
-import imageLaptop from "@/images/laptop.jpg";
-import logoBrightPath from "@/images/clients/bright-path/logo-light.svg";
-import logoFamilyFund from "@/images/clients/family-fund/logo-light.svg";
-import logoGreenLife from "@/images/clients/green-life/logo-light.svg";
-import logoHomeWork from "@/images/clients/home-work/logo-light.svg";
-import logoMailSmirk from "@/images/clients/mail-smirk/logo-light.svg";
-import logoNorthAdventures from "@/images/clients/north-adventures/logo-light.svg";
-import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
-import logoPhobiaLight from "@/images/clients/phobia/logo-light.svg";
-import logoUnseal from "@/images/clients/unseal/logo-light.svg";
-import { type Metadata } from "next";
-import { ContactSection } from "@/components/ContactSection";
-import { Container } from "@/components/Container";
-import { FadeIn, FadeInStagger } from "@/components/FadeIn";
-import { List, ListItem } from "@/components/List";
-import { PageLinks } from "@/components/PageLinks";
-import { SectionIntro } from "@/components/SectionIntro";
-import { StylizedImage } from "@/components/StylizedImage";
-import { Testimonial } from "@/components/Testimonial";
-import { loadArticles, loadCaseStudies, type CaseStudy, type MDXEntry } from "@/lib/mdx";
+import { type Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import { ContactSection } from '@/components/ContactSection'
+import { Container } from '@/components/Container'
+import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { List, ListItem } from '@/components/List'
+import { SectionIntro } from '@/components/SectionIntro'
+import { StylizedImage } from '@/components/StylizedImage'
+import { Testimonial } from '@/components/Testimonial'
+import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
+import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
+import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
+import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
+import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
+import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import imageLaptop from '@/images/laptop.jpg'
+import { type CaseStudy, type MDXEntry, loadCaseStudies, loadArticles } from '@/lib/mdx'
+import { PageLinks } from '@/components/PageLinks'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
